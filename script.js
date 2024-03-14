@@ -22,11 +22,17 @@ formEl.addEventListener("submit", (e) => {
             </button>
         </td>`;
     tableBody.appendChild(tr);
-    // formEl.reset();
+    formEl.reset();
 });
 
 function deleteData(event) {
-    event.target.closest("tr").remove();
+
+const confirmDelete = confirm("Are You Sure You Want To Delete?");
+
+if(confirmDelete){
+  event.target.closest("tr").remove(); 
+}
+
 }
 
 function editData(event) {
