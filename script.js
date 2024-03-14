@@ -22,7 +22,7 @@ formEl.addEventListener("submit", (e) => {
             </button>
         </td>`;
     tableBody.appendChild(tr);
-    formEl.reset();
+    // formEl.reset();
 });
 
 function deleteData(event) {
@@ -30,10 +30,16 @@ function deleteData(event) {
 }
 
 function editData(event) {
-    const selectedRow = event.target.closest("tr");
-    firstNameEl.value = selectedRow.children[0].textContent;
-    lastNameEl.value = selectedRow.children[1].textContent;
-    emailEl.value = selectedRow.children[2].textContent;
-    phoneEl.value = selectedRow.children[3].textContent;
-    selectedRow.remove();
+
+  
+  const selectedRow = event.target.closest("tr");
+
+//  const selectedRow = event.target.parentElement.parentElement;
+
+
+  firstNameEl.value = selectedRow.children[0].textContent;
+  lastNameEl.value = selectedRow.children[1].textContent;
+  emailEl.value = selectedRow.children[2].textContent;
+  phoneEl.value = selectedRow.children[3].textContent;
+  selectedRow.remove();
 }
