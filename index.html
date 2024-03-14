@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CRUD Application - Js</title>
+
+<!-- bootstrap icon link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body style="color: white; background-color: #325276;">
+
+
+<div class="container mt-5">
+  
+    <div class="text-center">
+        <h1 class="mb-5">CRUD Application</h1>
+    </div>
+
+    <div class="main row justify-content-center">
+
+     <form action="" id="student-form" class="row justify-content-center" autocomplete="off">
+
+   <div class="col-xxl-6 col-xl-5 mb-4">
+    <label for="FirstName" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="FirstName" placeholder="Enter Your FirstName" required>
+   </div>
+
+   <div class="col-xxl-6 col-xl-5  mb-4">
+    <label for="LastName" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="LastName" placeholder="Enter Your LastName" required>
+   </div>
+
+   <div class="col-xxl-6 col-xl-5 mb-4">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+   </div>
+
+   <div class="col-xxl-6 col-xl-5 mb-4">
+    <label for="LastName" class="form-label">Mobile Number</label>
+    <input type="text" class="form-control" id="MobileNumber" placeholder="Enter Your Mobile Number" required>
+   </div>
+
+   <div class="text-center mt-4">
+    <button type="submit" class="btn btn-success col-2  ">Submit</button>
+   </div>
+
+     </form>
+
+    <div class="mt-5 col-xxl-10 col-xl-8">
+    
+        <table class="table table-dark table-striped text-center">
+            <thead>
+                <tr>
+                   <th>First Name</th> 
+                   <th>Last Name</th> 
+                   <th>Email</th> 
+                   <th>Mobile Number</th> 
+                   <th>Actions</th> 
+                
+                </tr>
+            </thead>
+
+            <tbody id="student-list">
+                 <tr>
+                    <td>daneej</td>
+                    <td>Ahnaf</td>
+                    <td>ahnaf2017@gmail.com</td>
+                    <td>07675897565</td>
+                    <td>
+                       <button class="btn btn-outline-warning btn-sm" onclick="editData(event)"> <i class="bi bi-pencil-square"></i>Edit</button>
+                       <button class="btn btn-outline-danger btn-sm" onclick="deleteData(event)"> <i class="bi bi-trash"></i>Delete</button>
+                    </td>
+                 </tr>
+
+                 <tr>
+                    <td>daneej</td>
+                    <td>Ahnaf</td>
+                    <td>ahnaf2018@gmail.com</td>
+                    <td>07675897565</td>
+                    <td>
+                      <button class="btn btn-outline-warning btn-sm" onclick="editData(event)"> <i class="bi bi-pencil-square"></i>Edit</button>
+                      <button class="btn btn-outline-danger btn-sm" onclick="deleteData(event)"> <i class="bi bi-trash"></i>Delete</button>
+                   </td>
+                 </tr>
+            </tbody>
+
+
+              </table>
+
+
+    </div>
+
+
+
+    </div>
+
+
+
+</div>
+  
+
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- external script link -->
+    <script src="./script.js"></script>
+  </body>
+</html>
